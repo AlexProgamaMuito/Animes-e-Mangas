@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121214;
+  color: #e1e1e6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+.navbar {
+   
+    background: #1c1c30;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 15px 35px;
+
+    border-bottom: 2px solid blueviolet;
+}
+
+.logo {
+    color: blueviolet;
+    font-size: 22px;
+}
+.pequeno{
+    width: 150px;
+    transition: 0.4s;
+}
+.pequeno:hover{
+    transform: scale(1.1);
+}
+.grande{
+    display: flex;
+    justify-content: center;
+}
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: blueviolet;
+    transform: translateY(-3px);
+}
+h1{
+    color: blueviolet;
+    border-bottom: 2px solid blueviolet;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+}
+
+h3{
+    color: blueviolet;
+    width: 100%;
+   padding: 20px;
+    text-align: center;
+}
+
+.video{
+    width: 80%;
+    border: 2px rgb(217, 0, 255) solid;
+  box-shadow: 2 30px 28px rgba(4, 4, 4, 0.765);
+  border-radius: 20px;
+    display: block;
+    margin: auto;
+    
+}
+
+.Caixa {
+
+    width: 400px;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    border: 2px blueviolet solid;
+    background-color: #1c1c30;
+    transition: 0.5s;
+     display: block;
+    margin: auto;
+}
+.Caixa2 {
+
+    width: 400px;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    border: 2px blueviolet solid;
+    background-color: #1c1c30;
+    transition: 0.5s;
+     display: block;
+    margin: auto;
+}
+
+.Caixa3 {
+
+    width: 400px;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    border: 2px blueviolet solid;
+    background-color: #1c1c30;
+    transition: 0.5s;
+     display: block;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: blueviolet;
+    transition: 0.4s;
+}
+a:hover{
+    border-bottom: 2px blueviolet solid;
+}
+.Caixa:hover{
+   box-shadow: rgba(161, 44, 167, 0.837) 2px 5px 30px;
+     border-bottom: red solid;
+     background-color: rgba(137, 43, 226, 0.425);
+    transform: scale(1.1);
+}
+.deixando-bonito{
+    display: flex;
+    gap: 10px;
+}
+.Caixa2:hover{
+   box-shadow: rgba(161, 44, 167, 0.837) 2px 10px 30px;
+     border-bottom: rgb(0, 204, 255) solid;
+     background-color: rgba(137, 43, 226, 0.425);
+    transform: scale(1.1);
+}
+.Caixa3:hover{
+   box-shadow: rgba(161, 44, 167, 0.837) 2px 10px 30px;
+     border-bottom: rgb(6, 192, 12) solid;
+     background-color: rgba(137, 43, 226, 0.425);
+    transform: scale(1.1);
+}
+.coisa{
+    width: 300px;
+}
+.imagem{
+    width: 50px;
+    border: none solid;
+    border-radius: 30px;
+
+}
+footer {
+    text-align: center;
+    background-color: blueviolet;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    padding: 10px;
+    margin-top: 120px;
+   
+}

@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #2d263c;
+    font-family: E;
+}
+.pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 300px;
+    padding: 8px;
+    background: #222;
+    border: 2px solid blueviolet;
+    border-radius: 12px;
+}
+
+.pesquisa input {
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+.pesquisa input::placeholder {
+    color: #aaa;
+}
+
+.pesquisa button {
+    background: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+[hidden] {
+    display: none !important;
+}
+.catalogo-top {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.encode-sans-expanded-light {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 300;
+  color: blueviolet;
+  font-style: normal;
+  color: rgb(0, 132, 255);
+}
+
+.encode-sans-expanded-light5 {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 300;
+  color: blueviolet;
+  text-align: center;
+  font-style: normal;
+
+  border-bottom: 2px solid;
+}
+
+.encode-sans-expanded-light-6 {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 300;
+  color: red;
+  text-align: center;
+  font-style: normal;
+
+}
+
+
+.h3{
+    color: blueviolet;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Aqui eu sinceramente não entendi por que funcionou, ja que tambem fiz css inline, talvez esse border none tenha dado espaço para mudar a cor do hr ja diretamente no css inline. enfim pelo menos deu certo */
+hr {
+    border: none;
+    height: 2px;
+}
+/*era pra ser video mas o github desgraçado disse que tava pesado :( */
+.video-card{
+    width: 200px;
+    border: blueviolet 2px solid;
+    border-radius: 20px;
+    
+}
+.encode-sans-expanded-light-1 {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 300;
+  color: blueviolet;
+  font-style: normal;
+  transition: 0.4s;
+}
+
+
+
+.encode-sans-expanded-light-1:hover {
+  transform: scaleY(1.1);
+  color: yellow;
+}
+/* Aqui eu separei cada parte para cada titulo do site para cor e fonte, por que n sei se tem algum outro jeito de fazer junto e separado */
+.encode-sans-expanded-light-2 {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 300;
+  color: blueviolet;
+  font-style: normal;
+  transition: 0.4s;
+}
+.encode-sans-expanded-light-2:hover {
+  transform: scaleY(1.1);
+  color: rgb(0, 255, 255);
+}
+.encode-sans-expanded-light-3 {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 300;
+  color: blueviolet;
+  font-style: normal;
+  transition: 0.4s;
+}
+.encode-sans-expanded-light-3:hover {
+  transform: scaleY(1.1);
+  color: red;
+}
+
+.encode-sans-expanded-light-4 {
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 300;
+  color: blueviolet;
+  font-style: normal;
+  transition: 0.4s;
+}
+.encode-sans-expanded-light-4:hover {
+  transform: scaleY(1.1);
+  color: rgb(0, 174, 255);
+}
+
+
+.titulo{
+    display:flex;
+    
+}
+p{
+    color: rgba(137, 43, 226, 0.716);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+    color: rgb(163, 90, 232);
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: red;
+    transform: translateY(-3px);
+    border-bottom: red 2px solid;
+}
+/* text decoration none, para tirar a barrinha de baixo */
+.navbar {
+   
+    background: #1c1c30;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 15px 35px;
+
+    border-bottom: 2px solid blueviolet;
+}
+
+.logo {
+    color: blueviolet;
+    font-size: 22px;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: blueviolet;
+    transform: translateY(-3px);
+}
+.banner {
+    border-top: 2px blueviolet solid
+    ;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    overflow: hidden;
+    
+
+
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        black 65%,
+        transparent 100%
+    );
+/* pesquisando um pouco usando, entendi que usar  linear gradiente da pra usar não só em backgrounds como tambem videos, conseguindo fazer um banner :P */
+    mask-image: linear-gradient(
+        to bottom,
+        black 65%,
+        transparent 100%
+    );
+}
+.banner img{
+    width: 100%;
+}
+
+.tag-destaque {
+  background-color: rgba(0, 179, 126, 0.15);
+  
+  color: #00b37e;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 4px;
+  width: fit-content;
+  margin-bottom: 15px;
+
+}
+.Top-Mangas{
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    width: 450px;
+    height: 770px;
+    perspective: 1000px;
+
+}
+/* Card inner serve para criar o efeito frente e verso usando o transition pelo oque eu entendi aprendendo com a IA */
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.frente, .verso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    backface-visibility: hidden;
+     border: rgb(255, 200, 0) 2px solid;
+    
+}
+
+.frente img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.so-pra_ficar-bonito{
+    display: flex;
+}
+.verso {
+    background: #222;
+    color: white;
+    padding: 12px;
+    box-sizing: border-box;
+    transform: rotateY(180deg);
+}
+
+
+.banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.conteudo {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+
+.card-semana {
+  background-color: rgba(83, 65, 105, 0.705);
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  border: 2px solid blueviolet;
+  height: 249px;
+  box-shadow: rgba(72, 73, 73, 0.623) 0px 1px 4px;
+  cursor: pointer;
+  max-width: 230px;
+  width: 100%;
+  flex: 0 0 160px
+}
+
+.catalogo {
+    display: flex;
+    gap: 15px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+    padding: 10px;
+}
+
+/* Cada mangá */
+.manga {
+    flex: 0 0 160px;
+    scroll-snap-align: start;
+}
+
+/* Personalizando a barra de rolagem */
+.catalogo::-webkit-scrollbar {
+    height: 8px;
+}
+
+.catalogo::-webkit-scrollbar-track {
+    background: #222;
+    border-radius: 10px;
+}
+
+.catalogo::-webkit-scrollbar-thumb {
+    background: #8b0000;
+    border-radius: 10px;
+}
+
+.catalogo::-webkit-scrollbar-thumb:hover {
+    background: #c00000;
+}
+
+.catalogo::-webkit-scrollbar-thumb {
+    background: #8b0000;
+    border-radius: 10px;
+}
+
+.catalogo::-webkit-scrollbar-thumb:hover {
+    background: #c00000;
+}
+.card-semana img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.card-semana:hover {
+  transform: scale(1.05);
+  background-color: rgba(137, 43, 226, 0.69);
+  box-shadow: rgba(72, 73, 73, 0.685) 0px 1px 15px;
+}
+
+.card-semana h3{
+    color: rgb(186, 29, 128);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card-semana1 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.coisa-legal{
+    width: 300px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    transition: 0.4s;
+}
+
+.coisa-legal:hover{
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    background-color: blueviolet;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    padding: 10px;
+    margin-top: 120px;
+   
+}
